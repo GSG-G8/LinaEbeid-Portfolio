@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lina Ebeid Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -44,7 +48,7 @@
       <section class="services" id="Services">
         <section class="services__desc">
           <h2>Services to offer</h2>
-          <div >
+          <div>
             <article>
               <h3><span style="color: #cccccc;">01.</span>Research</h3>
               <p>
@@ -74,15 +78,37 @@
             </article>
           </div>
         </section>
-        <!-- <section class="services__project">
-          <div class="img__wrap">
-            <img class="img__img" src="img/l.png" >
-            <p class="img__description">Project 1.</p>
-          </div>
-        </section> -->
       </section>
     </main>
-    <footer></footer>
+    <footer id="Contact">
+      <section class="contact">
+        <h4>Contact ME</h4>
+        <p>Phone: +970 59-123-5567</p>
+        <p>Email: <a href="#">linaebe0@gmail.com</a></p>
+        <ul class="contact__social">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-github"></i> </a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i> </a>
+          </li>
+        </ul>
+      </section>
+
+      <form>
+        <label for="name">Name:</label>
+        <input class="form-info" id="name" type="text" /><br />
+        <label for="email">email:</label>
+        <input class="form-info" id="email" type="email" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message"></textarea><br />
+        <button type="button">Submit</button>
+      </form>
+      <div class="cr">© 2020 Lina - BeTheme. All Rights Reserved.</div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

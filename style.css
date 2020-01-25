@@ -38,7 +38,7 @@ nav {
   list-style-type: none;
   float: right;
   margin-left: auto;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 a {
@@ -47,12 +47,12 @@ a {
 }
 
 li {
-  padding: 5px;
+  padding: 10px;
 }
 
 .logo {
   float: left;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .logo img {
@@ -74,7 +74,6 @@ header h1 {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 5% auto;
-  /* border: 1px black solid; */
   align-items: center;
   justify-content: space-around;
 }
@@ -90,7 +89,7 @@ header h1 {
 
 .about__detailes p {
   animation-duration: 3s;
-  animation-name: slidein;
+  /* animation-name: slidein; */
 }
 
 /*Styling services section*/
@@ -113,29 +112,37 @@ header h1 {
   padding: 10px;
 }
 
-/*,,,,,,,,,,,,,*/
-/* .img__wrap {
+/*styling footer*/
+footer {
+  background-color: rgba(133, 117, 146, 0.877);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
-  height: 200px;
-  width: 257px;
 }
-
-.img__description {
+footer section {
+  padding: 10px;
+  margin-left: 5%;
+}
+.contact__social {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.cr {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
+  bottom: 20px;
+  left: 30%;
+}
+form {
+  margin-left: auto;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 1;
-} */
+.form-info {
+  margin: 5px;
+}
 
 /* Keyframes*/
 @keyframes slidein {
@@ -169,4 +176,27 @@ header h1 {
   to {
     margin-top: 10%;
   }
+}
+
+/*media query*/
+@media (max-width: 500px) {
+  * {
+    font-size: 0.95em;
+  }
+  header {
+    height: 300px;
+  }
+  footer section {
+    padding: 0;
+    margin-left: 2%;
+  }
+  .form-info {
+    margin: 0px;
+}
+.cr {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 35px;
+  font-size: 10px;
+}
 }
