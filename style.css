@@ -4,9 +4,8 @@
   scroll-behavior: smooth;
   font-style: oblique;
 }
-body{
-  background-color: blanchedalmond;
-
+body {
+  background-color: rgba(230, 228, 221, 0.836);
 }
 
 header {
@@ -66,24 +65,7 @@ header h1 {
   animation-name: slidedown;
 }
 
-@keyframes slidedown {
-  from {
-    margin-top: 0%;
-  }
-
-  75% {
-    font-size: 150%;
-    margin-top: 5%;
-  }
-
-  to {
-    margin-top: 10%;
-  }
-}
-
 /* styling about section*/
-main {
-}
 
 .about {
   width: 80%;
@@ -111,6 +93,51 @@ main {
   animation-name: slidein;
 }
 
+/*Styling services section*/
+.services__desc {
+  text-align: center;
+}
+.services__desc div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: white;
+  margin: 5% auto;
+  justify-content: space-around;
+}
+
+.services__desc article {
+  width: 220px;
+  text-align: justify;
+  padding: 10px;
+}
+
+/*,,,,,,,,,,,,,*/
+/* .img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+} */
+
+/* Keyframes*/
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -126,5 +153,20 @@ main {
   to {
     margin-left: 0%;
     width: 100%;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    margin-top: 0%;
+  }
+
+  75% {
+    font-size: 150%;
+    margin-top: 5%;
+  }
+
+  to {
+    margin-top: 10%;
   }
 }
